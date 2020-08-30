@@ -1,0 +1,18 @@
+.Certs{
+    background-color: #8AB9FF;
+}
+
+.certificationsWindow{
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    height: auto;
+    margin-top: 30px;
+    background-color: rgb(56, 106, 186) ;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.UPennCertification{
+    margin: auto;
+    text-align: center;
+}

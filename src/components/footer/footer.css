@@ -1,0 +1,23 @@
+.homeFooter {
+    background-image: url("../../TechnologyPhotos/header.jpg");
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: ghostwhite;
+    text-align: center;
+    min-height: 100px;
+    margin-top: 20px;
+    border-top: 5px solid black;
+}
+
+.techFooter {
+    background-image: url("../../TechnologyPhotos/header2.jpg");
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: ghostwhite;
+    text-align: center;
+    min-height: 100px;
+    margin-top: 20px;
+    border-top: 5px solid black;
+}

@@ -1,0 +1,125 @@
+:root {
+    --span-background-color: #3468B8;
+    --link-color: white;
+}
+
+.namebox {
+    background-color: rgb(56, 106, 186);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: ghostwhite !important;
+    font-size: 35px;
+    padding: 20px;
+    margin: 0px, auto, 0px, auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: 3px solid black;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+@media only screen and (max-width: 756px) {
+    .namebox {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
+    .myNav {
+        padding: 0px;
+    }
+    .topPortion {
+        height: 193px;
+    }
+    .spanForLink {
+        border: 1px solid black;
+        height: auto;
+        padding: 1px;
+        margin: 0px 1px 0px 1px;
+    }
+    .linkS {
+        display: grid;
+        height: 20%;
+        font-size: 15px;
+        justify-content: center;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .navLink{
+        font-size: 15px !important;
+        width: 100%;
+    }
+}
+
+.navLink {
+    border: 1px solid black;
+    height: auto;
+    padding: 15px;
+    background-color: var(--span-background-color);
+    opacity: .8;
+    border-radius: 25%;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--link-color);
+    font-family: 'Roboto Slab', serif;
+    padding: 0px 9px 0px 9px;
+}
+
+.navLink:hover {
+    background-color: var(--link-color);
+    opacity: 1;
+    color: black;
+    transition: background-color 500ms;
+    text-decoration: none;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.topPortion {
+    background-image: url("../../../TechnologyPhotos/header.jpg");
+    border-bottom: 5px solid black;
+}
+
+.techTopPortion {
+    background-image: url("../../../TechnologyPhotos/header2.jpg");
+    border-bottom: 5px solid black;
+    height: 193px;
+}
+
+.linkS {
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media(min-width: 756px ){
+    .hamburger{
+        display: none;
+    }
+}
+
+
+.hamburger{
+    color: black;
+    background-color: #d4d4d4;
+    width: 15%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20%;
+    
+}
+
+.active{
+    color: black;
+    background-color: white;
+}

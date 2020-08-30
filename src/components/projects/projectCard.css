@@ -1,0 +1,10 @@
+:root{
+    --link-hover-color: rgb(211, 142, 81);
+}
+
+#hoverEffectBig :hover {
+    border: solid;
+    border-color: var(--link-hover-color);
+    border-width: 5px;
+    transition: background-color 500ms;
+}

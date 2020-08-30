@@ -1,0 +1,312 @@
+[
+    {
+        "id": 114,
+        "href": "https://travel-with-me.herokuapp.com/",
+        "name": "Travel-With-Me",
+        "github": "https://github.com/cfech/TravelApp",
+        "description": "A full MERN stack application that allows the user to plan a trip of their choosing and save it for later. Has a full user authentication system that allows users to create an account and login. The user can search for a city of their choosing, and have a day trip planned or plan their own custom tip which they can view in their profile page. The User can delete entire trips or just one item within their trip. ",
+        "technologies": [
+            "Axios",
+            "Body-Parser",
+            "ByCrypt",
+            "Connect-Mongo",
+            "DotEnv",
+            "Express",
+            "Express-Session",
+            "Favicon",
+            "Git",
+            "Heroku",
+            "JSX",
+            "Material UI",
+            "MERN Stack",
+            "MLab",
+            "MongoDB",
+            "Mongoose",
+            "MVC File Structure",
+            "Node.js",
+            "Passport.js",
+            "Passport-local",
+            "React.js",
+            "React-Hooks",
+            "React-Router",
+            "Ternary Expressions",
+            "Triposo Api"
+        ],
+        "disclaimer": "*This is a group project that was done remotely over the course of a week. The final of 3 group projects"
+    }, {
+        "id": 112,
+        "href": "https://car-amplify.herokuapp.com/",
+        "name": "Car Amplify",
+        "github": "https://github.com/cfech/Car_amplify",
+        "technologies": [
+            "Ajax",
+            "BING Image Api",
+            "CSS3",
+            "DotEnv",
+            "Express.js",
+            "Express-Handlebars",
+            "Git",
+            "HTML5",
+            "Heroku",
+            "Javascript",
+            "JawsDB",
+            "jQuery",
+            "Materialize",
+            "Moment.js",
+            "MVC File Structure",
+            "MySql",
+            "NHTSA Vehicle Api",
+            "Node.js",
+            "Sequelize"
+        ],
+        "description": "An application for car enthusiasts who wish to learn detailed specifications about a car of their choosing. There is a wide variety of cars to select from, when a model is chose, the makes drop down populates from the database. When a user picks a make model and year 2 api calls are sent off simultaneously. One to the Bing Image API to retrieve the image and another to the NHTSA Vehicle Api to retrieve the car data on any car relating to the users choosing.",
+        "disclaimer": "*This is a group project that was done remotely over the course of a week. Group project 2"
+    },{
+        "id": 111,
+        "href": "https://cfech.github.io/What-s-Happening-Philly/",
+        "name": "What's Happening Philly",
+        "github": "https://github.com/cfech/What-s-Happening-Philly",
+        "technologies": [
+            "Ajax",
+            "Bootstrap",
+            "CSS3",
+            "Git",
+            "Github Pages",
+            "Google maps api",
+            "Google Fonts",
+            "HTML5",
+            "Javascript",
+            "jQuery",
+            "Moment.js",
+            "Ticketmaster Api"
+        ],
+        "description": "An application for seeing what events are happening in the Philadelphia area in the area, the user can search by time frame and key word. A clickable list will be appended form the page of events that match the users search criteria. The user can then click the list item and a pin will appear ont he google map at the location of the selected event.",
+        "disclaimer": "*This is a group project that was done the course of a week. Group project 1"
+    },{
+        "id": 9,
+        "href": "https://cfech.github.io/User_Directory/",
+        "name": "User Directory",
+        "github": "https://github.com/cfech/User_Directory",
+        "technologies": [
+            "Axios",
+            "Javascript",
+            "JSX",
+            "Git",
+            "Github Pages",
+            "Node.js",
+            "React.js",
+            "RandomUser.ME API"
+        ],
+        "description": "This is React Based app that pulls in information about random users from the randomuser.me api and displays them in table on the page by mapping through the state of the api results. The user can sort by first or last name, ascending or descending as well as filter by name by typing in a name in the search bar."
+    },{
+        "id": 10,
+        "href": "https://workout-tracker4525453.herokuapp.com/?id=5e7d09c21a6b6ac234837f2d",
+        "name": "Workout Tracker",
+        "github": "https://github.com/cfech/Workout-tracker",
+        "technologies": [
+            "Create React App",
+            "Express",
+            "Heroku",
+            "Javascript",
+            "JSX",
+            "MLab",
+            "MongoDb",
+            "Mongoose",
+            "Morgan",
+            "Node.js",
+            "React.js"
+        ],
+        "description": "This app allows you to track your workouts by date, creating a workout through a post route. It allows for categories, either cardio or resistance and logs the stats from these workouts in a database. The user is then then presented with the latest workout on the home page, through a get route, and can either update the workout or mark it complete through a post route. It also presents the stats for the week by going to the stats page through a get route."
+    },{
+        "id": 13,
+        "href": "https://googlebooks232.herokuapp.com/",
+        "name": "Google Books",
+        "github": "https://github.com/cfech/Google-Books",
+        "technologies": [
+            "Axios",
+            "Bootstrap",
+            "CSS3",
+            "DotEnv",
+            "Express",
+            "Git",
+            "Google Books Api",
+            "Google Fonts",
+            "Heroku",
+            "Javascript",
+            "JSX",
+            "MERN Stack",
+            "MongoDb",
+            "Mongoose",
+            "MLab",
+            "MVC File Structure",
+            "Node.js",
+            "React.js",
+            "React-Router",
+            "Ternary Expressions"
+        ],
+        "description": "A full MERN stack application retrieving books form the google book api based on user search. React router is used to switch from page to page. Bootstrap on the front end and mongo db on the backend. It brings back a list of book from the google books api and maps through them putting them on the page with the author, title, image and description. You can click the view link to go to the google books link or click the save button to save the book information to a database. Thee is a saved books page where a get request is preformed and list the books you saved to the database. You can delete frm his page as well."
+    },{
+        "id": 4,
+        "href": "https://cfech.github.io/Weather-Dashboard/",
+        "name": "Weather Dashboard",
+        "github": "https://github.com/cfech/Weather-Dashboard",
+        "technologies": [
+            "Bootstrap",
+            "CSS3",
+            "Font Awesome",
+            "Git",
+            "Github Pages",
+            "HTML5",
+            "Javascript",
+            "Moment.js",
+            "Local-Storage"
+        ],
+        "description": "A weather app using 3 API's from Openweathermap.org to retrieve information about weather for a certain area, based on user input. The API's retrieve information for the 1 day forecast,the uv index for the current day, and 5 day forecast. This information is then displayed on the screen and the location added to a list of previously searched cities. This website is fully responsive through the use of bootstrap rows and columns, and uses local storage so the previous searches list (up to 5 ). You can click the list item and it will recall the api for the selected city."
+    },{
+        "id": 8,
+        "href": "https://burgerapp212.herokuapp.com/",
+        "name": "Burger App",
+        "github": "https://github.com/cfech/burger_app2",
+        "technologies": [
+            "Bootstrap",
+            "Custom ORM",
+            "CSS3",
+            "DotEnv",
+            "Express",
+            "Express-Handlebars",
+            "Git",
+            "Get Route",
+            "Heroku",
+            "HTML5",
+            "JawsDB",
+            "Javascript",
+            "MySql",
+            "MVC File Structure",
+            "Node.js",
+            "Post Route"
+        ],
+        "description": "In this application you can add a new burger, which is then put in the uneaten column, and when you click the devour button the burger is 'eaten', and moves to the eaten column. This is done by changing the boolean value from false to true when the burger is eaten. The burgers are stored in a mysql database on the backend."
+    },{
+        "id": 5,
+        "href": "https://note-taker44.herokuapp.com/",
+        "name": "Note Taker",
+        "github": "https://github.com/cfech/Note-Taker",
+        "technologies": [
+            "CSS3",
+            "Express",
+            "Fs",
+            "Get Route",
+            "Git",
+            "Heroku",
+            "HTML5",
+            "Javascript",
+            "JSON",
+            "Node.js",
+            "Path",
+            "Post Route"
+        ],
+        "description": "An application that acts as a note pad. Using a JSON backend, you can view previously saved notes, create new notes or delete notes. Due to the use of the JSON file notes will persist through refresh of the page"
+    },{
+        "id": 0,
+        "href": "https://drive.google.com/file/d/1sS1PHocPLIzckfGtZ3uN7aSKYcO7qWG_/view",
+        "name": "ReadMe Generator",
+        "github": "https://github.com/cfech/README-Generator",
+        "description": "A command line application which prompts users with several questions and generates a general read me document, based on user input, for the start of a project",
+        "technologies": [
+            "Axios",
+            "Command Line",
+            "DotEnv",
+            "Git",
+            "Github User Api",
+            "Javascript",
+            "Inquirer",
+            "Node.js"
+        ]
+    },
+    {
+        "id": 1,
+        "href": "https://drive.google.com/file/d/1IUSU73tzOR20j6H8bvTxj3gUURNQtpW8/view",
+        "name": "Team Generator",
+        "github": "https://github.com/cfech/Team-Profile-Generator",
+        "description": "A command line application to create an html document for a team. The user is prompted with questions about the team members they wish to add.  You are able to make 1 manager and any combination of any number of interns and engineers. After you are done an html file will be generated with the users input and placed in the output folder.",
+        "technologies": [
+            "Bootstrap",
+            "Classes",
+            "Constructors",
+            "Font Awesome",
+            "Fs",
+            "Git",
+            "HTML5",
+            "Inquirer",
+            "Jest",
+            "Javascript",
+            "Node.js",
+            "Path"
+        ]
+    },{
+        "id": 6,
+        "href": "https://drive.google.com/file/d/13zGr2oahnn5zeD4nCouvfIUJljqtb1yb/view",
+        "name": "Employee Tracker",
+        "github": "https://github.com/cfech/Employee_Tracker",
+        "technologies": [
+            "Ascii Art",
+            "Command line",
+            "Console.Table",
+            "DotEnv",
+            "Git",
+            "Inquirer",
+            "Javascript",
+            "MySql",
+            "Node.js"
+        ],
+        "description": "This is a command line application that is used to manage a companies various employees, departments and roles. The user is prompted with different options as to what they want to do, such as add  and delete new employees, departments or roles. View all employees, roles and departments,view all employees by department, as well as update employee roles. This application aslo uses the dotenv node package to mask sensitive information"
+    },{
+        "id": 3,
+        "href": "https://cfech.github.io/DailyPlanner/",
+        "name": "Daily Planner",
+        "github": "https://github.com/cfech/RandomPasswordGenerator",
+        "technologies": [
+            "Bootstrap",
+            "CSS3",
+            "Font Awesome",
+            "Git",
+            "Github Pages",
+            "Google Fonts",
+            "HTML5",
+            "Javascript",
+            "jQuery",
+            "Local-Storage",
+            "Moment.js"
+        ],
+        "description": "An application that allows the user to plan out their daily calendar from 9am to 5pm. The data will persist through reload through the use of local storage It uses moment.js to color code the blocks of time by passed, current and future."
+    },{
+        "id": 7,
+        "href": "https://cfech.github.io/MultipleChoiceQuiz/",
+        "name": "Multiple Choice Quiz",
+        "github": "https://github.com/cfech/MultipleChoiceQuiz",
+        "technologies": [
+            "CSS3",
+            "Git",
+            "Github Pages",
+            "HTML5",
+            "Media Queries",
+            "Javascript",
+            "setInterval"
+        ],
+        "description": "A multiple choice quiz made with javascript. The countdown timer starts when the user starts the quiz. The game is over when the user answers all the questions or the timer runs out. When a question is answered wrong time is deducted. When the quiz is over the user can save their score, with their initials on the high score page. These scores are stored in local storage and persist through refresh. The user can clear their high scores at any time "
+    },{
+        "id": 2,
+        "href": "https://cfech.github.io/RandomPasswordGenerator/",
+        "name": "Password Generator",
+        "github": "https://github.com/cfech/RandomPasswordGenerator",
+        "technologies": [
+            "CSS3",
+            "Git",
+            "Github Pages",
+            "HTML5",
+            "Javascript",
+            "Math.Random"
+        ],
+        "description": "An application that takes in user input for length of the password and if you want upper case letters, lower case letters, numbers or special characters. The password is then generated and displayed on the screen. You also have the option to copy the password with the copy button"
+    }
+]

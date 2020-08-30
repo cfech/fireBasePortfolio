@@ -1,0 +1,25 @@
+
+.tech {
+    background-image: url(https://images.pexels.com/photos/1546863/nature-milky-way-galaxy-constellations-1546863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.projects {
+    background-color: rgb(56, 106, 186);
+    padding: 5px 20px 5px 20px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 756px) {
+    .tech {
+        background-image: url();
+        background-color: black;
+    }
+    .projects {
+        margin-top: 5px;
+    }
+}
+
+.directory{
+    width: 100%;
+    background-color: white;
+}

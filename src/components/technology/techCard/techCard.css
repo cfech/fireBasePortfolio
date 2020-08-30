@@ -1,0 +1,99 @@
+.repoLinkTech {
+    
+    font-size: 25px;
+    padding-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+.repoLinkTech:hover {
+    color: #FF882E;
+}
+
+.techCardB {
+    border: 2px solid black;
+    margin: auto;
+    padding: 10px, 0px, 0px, 0px;
+    margin-top: 30px;
+}
+
+.descriptionDiv {
+    border-right: 2px solid black;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .descriptionDiv {
+        border-right: 0px solid black;
+    }
+}
+
+.techList {
+    border: 5px inset #979797;
+    height: 350px;
+    overflow-y: auto;
+    margin: 0px, auto, 5px, auto;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.und {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    width: 80%;
+    margin: 10px auto 10px auto;
+}
+
+.techH6 {
+    margin-left: 53px;
+}
+
+.descH6 {
+    margin-left: 45px;
+}
+
+.descriptionP {
+    width: 80%;
+    margin: auto;
+}
+
+.techList::-webkit-scrollbar {
+    width: .7em;
+}
+
+.techList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px black;
+    background-color: black;
+}
+
+.techList::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+    background-color: #FF882E;
+
+    
+}
+
+.techTitle{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 756px) {
+.techTitle{
+    display: none;
+}
+
+
+
+}

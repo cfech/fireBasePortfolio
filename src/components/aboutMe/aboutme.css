@@ -1,0 +1,62 @@
+#submitBtn {
+    width: 100%;
+    background-color: whitesmoke !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+    height: 40px;
+}
+
+#submitBtn:hover {
+    border-width: 5px;
+    border: solid;
+    background-color: #6B7380 !important;
+    color: ghostwhite;
+}
+
+#aboutMeDiv {
+    background-color: rgb(56, 106, 186) !important;
+    color: ghostwhite;
+    border: double;
+    border-color: black;
+    border-width: 8px;
+}
+
+.linksDiv {
+    background-color: rgb(56, 106, 186) !important;
+    color: ghostwhite;
+}
+
+.picture {
+    height: 250px;
+    width: auto;
+    border: 25px double white;
+    padding: 0px;
+    margin-right: 25px;
+}
+
+.aboutMe {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+}
+
+#email {
+    font-family: 'Alegreya', serif;
+    font-weight: 600;
+    /* border: 2px solid black;
+    border-radius: 15px 50px; */
+}
+
+/* @media only screen and (max-width: 768) {
+    #email{
+        font-size: 1px;
+    }
+} */
+
+@media only screen and (max-width: 756px) {
+    .picture {
+        width: 100%;
+        height: auto;
+    }
+}

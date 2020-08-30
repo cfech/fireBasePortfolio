@@ -1,0 +1,61 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #d4d4d4;
+    transition: transform 0.3s ease-out;
+
+}
+
+@media(min-width: 756px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+.Open{
+transform: translateX(0);
+}
+
+.Closed{
+transform: translateX(-100%);
+}
+
+.navLinkSide{
+    border: 4px solid black;
+    height: auto;
+    background-color: var(--span-background-color);
+    opacity: .8;
+    border-radius: 25%;
+    font-size: 20px;
+    color: var(--link-color);
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.navControls{
+    display: flex;
+    flex-flow: column;
+    margin: 30px 0px;
+}
+
+.navLinkSide:hover{
+    background-color: whitesmoke;
+    opacity: 1;
+    color: black;
+    transition: background-color 500ms;
+    text-decoration: none;
+}
+
+.closeButtonDiv{
+    margin: 20px;
+}
+
+.active{
+    color: black;
+    background-color: white;
+}
