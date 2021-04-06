@@ -33,7 +33,10 @@ class Certifications extends Component {
                         <h1>Certification in Web Development of the University of Pennsylvania College of Liberal and Professional Studies</h1>
                          <img  src={require("../../assets/webDevCertification2.png")} ></img>
                     </div>
-               
+                    <div className="MongoDBCertificate">
+                        <h1>MongoDB The Complete Developer Guide</h1>
+                         <img  src={require("../../assets/MongoDbCertificate.png")} ></img>
+                    </div>
                 </div>
 
 

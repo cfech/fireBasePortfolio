@@ -16,3 +16,50 @@
     margin: auto;
     text-align: center;
 }
+
+.MongoDBCertificate{
+    margin: 20px auto;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 20px 0px;
+}
+
+.MongoDBCertificate img{
+    max-width: 637px;
+}
+
+@media screen and (max-width: 992px) {
+    .MongoDBCertificate img{
+        max-width: 500px;
+    }
+    .UPennCertification img{
+        max-width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .MongoDBCertificate img{
+        max-width: 450px;
+    }
+    .UPennCertification img{
+        max-width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 610px) {
+    .MongoDBCertificate img{
+        max-width: 300px;
+    }
+    .UPennCertification img{
+        max-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .MongoDBCertificate img{
+        max-width: 250px;
+    }
+    .UPennCertification img{
+        max-width: 250px;
+    }
+  }
