@@ -11,4 +11,24 @@
     height: 125px;
     width: 125px;
     padding: 5px;
+
+    animation: dropIn 1.5s ease-out ;
+}
+
+@keyframes dropIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px) rotate(-180deg);
+        
+    }
+
+    80%{
+        opacity: .9;
+        transform: translateY(10px) ;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) rotate(0deg);
+    }
 }

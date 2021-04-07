@@ -20,6 +20,7 @@
     border: double;
     border-color: black;
     border-width: 8px;
+    
 }
 
 .linksDiv {
@@ -33,17 +34,23 @@
     border: 25px double white;
     padding: 0px;
     margin-right: 25px;
+    animation: moveInLeft 1.5s  ease-out;
+    
 }
 
 .aboutMe {
     text-align: justify;
     font-size: 20px;
     font-family: 'Alegreya', serif;
+    animation: moveInLeft 1.5s  ease-out;
+    
 }
 
 #email {
     font-family: 'Alegreya', serif;
     font-weight: 600;
+    animation: moveInRight 1.5s  ease-out;
+    
     /* border: 2px solid black;
     border-radius: 15px 50px; */
 }
@@ -58,5 +65,48 @@
     .picture {
         width: 100%;
         height: auto;
+    }
+}
+
+@keyframes moveInLeft {
+    /* what is happening at the start  */
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: .5;
+    }
+    /* could also have 30, 54, 76, any intermediate step we want */
+    80% {
+        opacity: .9;
+        transform: translateX(10px);
+    }
+    /* what is happening at the finish  */
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* transform: translateX(100px) roatate(180deg); */
+@keyframes moveInRight {
+    /* what is happening at the start  */
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50%{
+        opacity: .5;
+    }
+    /* could also have 30, 54, 76, any intermediate step we want */
+    80% {
+        opacity: .9;
+        transform: translateX(-10px);
+    }
+    /* what is happening at the finish  */
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
