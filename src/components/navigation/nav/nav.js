@@ -27,7 +27,15 @@ const nav = (props) => {
     return (
         <div className={backGroundImageSelector}>
             <nav className="navbar navbar-expand-lg navbar-light justify-content-center myNav">
-                <a data-toggle="tooltip" data-placement="top" title="Go Home" className="navbar-brand namebox ml-lg-5 ml-xs-0" href="/">CONNOR FECH</a>
+                <div className="navbar-brand namebox ml-lg-5 ml-xs-0">
+                    {/* <a data-toggle="tooltip" data-placement="top" title="Go Home"  href="/" id="name">CONNOR FECH</a> */}
+
+                    <div id="name">
+                        CONNOR FECH
+                </div>
+                
+                </div>
+
             </nav>
             {menu}
             {links}

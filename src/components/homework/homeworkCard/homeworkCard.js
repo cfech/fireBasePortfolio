@@ -6,7 +6,7 @@ import "./homework.css"
 function Homework(props) {
     return (
 
-        <div className="text-white col-lg-3 mb-4 mt-4 p-0 my-2 mx-2 ml-4 col-md-10">
+        <div className="text-white col-lg-3 mb-4 mt-4 p-0 my-2 mx-2 ml-4 col-md-10 test">
             <img src={props.src} id="homeworkPic" className="card-img"
                 alt="README Generator" />
             <div className="text-center">

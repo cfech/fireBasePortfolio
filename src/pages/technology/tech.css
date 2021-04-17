@@ -1,10 +1,12 @@
 
 .tech {
     background-image: url(https://images.pexels.com/photos/1546863/nature-milky-way-galaxy-constellations-1546863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: contain;
+   
 }
 
 .projects {
-    background-color: rgb(56, 106, 186);
+    background-color: rgba(56, 106, 186, .7);
     padding: 5px 20px 5px 20px;
     margin-top: 40px;
 }

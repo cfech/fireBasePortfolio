@@ -7,8 +7,8 @@ function Project(props) {
     return (
         <div className="text-white col-md-10 mb-4 mt-4 p-0 my-2 mx-2 ml-4">
 
-            <img src={props.src} id="homeworkPic" className="card-img"
-                alt="README Generator" />
+            <img src={props.src} id="projectPic" className="card-img"
+                alt="Project Picture" />
 
 
             <div className="text-center">

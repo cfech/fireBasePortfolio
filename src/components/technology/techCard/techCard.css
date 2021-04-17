@@ -1,11 +1,10 @@
-.repoLinkTech {
-    
+
+.techCardB__Link--row{
     font-size: 25px;
     padding-top: 10px;
     font-family: 'Roboto Slab', serif;
     color: white;
 }
-
 .repoLinkTech:hover {
     color: #FF882E;
 }
@@ -15,6 +14,10 @@
     margin: auto;
     padding: 10px, 0px, 0px, 0px;
     margin-top: 30px;
+}
+
+#techCardB__span:hover{
+    color: white;
 }
 
 .descriptionDiv {
@@ -92,7 +95,4 @@
 .techTitle{
     display: none;
 }
-
-
-
 }

@@ -2,9 +2,25 @@
     --link-hover-color: rgb(211, 142, 81);
 }
 
+
+/* .projectWrapper{
+    transition: all 1ms;
+} */
+
 #hoverEffectBig :hover {
     border: solid;
     border-color: var(--link-hover-color);
     border-width: 5px;
     transition: background-color 500ms;
+}
+
+#projectPic{
+    transition: all 1s;
+    border-radius: 20px;
+    background-size: cover;
+    
+}
+
+#projectPic:hover{
+transform: scale(1.05);
 }

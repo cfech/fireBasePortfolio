@@ -14,7 +14,70 @@
     text-align: center;
     font-family: 'Roboto Slab', serif;
     border: 3px solid black;
+    /* transition: all .5s; */
+    /* animation: pulse ; */
 }
+
+/* .namebox:hover{
+    transform: skewY(5deg) skewX(15deg) scale(1.1);
+} */
+
+/* @keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    } 
+  } */
+
+#name {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .5s;
+    animation: nameColor 1.5s ease-in-out ;
+    display: inline-block;
+    color: white;
+}
+
+#name:hover {
+    text-decoration: none;
+    background-image: linear-gradient(to right, black, white, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: skewY(-5deg) skewX(15deg) scale(1.2);
+    /*x, y, blur, color(color, opacity)*/
+    text-shadow: 5px 10px 5px rgba(black);
+}
+
+@keyframes nameColor{
+    10% {
+        background-image: linear-gradient(to right, black, white);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    
+
+    40% {
+        
+        color: black;
+    }
+    70% {
+        background-image: linear-gradient(to right, white, black);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;   
+        
+    }
+    100% {
+        color : white
+      
+    }
+}
+
 
 .navbar {
     padding-bottom: 0px;
@@ -47,8 +110,7 @@
         box-sizing: border-box;
         display: none;
     }
-
-    .navLink{
+    .navLink {
         font-size: 15px !important;
         width: 100%;
     }
@@ -67,8 +129,7 @@
     font-family: 'Roboto Slab', serif;
     padding: 0px 9px 0px 9px;
     display: inline-block;
-    transition: all .4s ;
-    
+    transition: all .4s;
 }
 
 .navLink:hover {
@@ -80,9 +141,11 @@
     /* transform: translateY(-3px); */
     /* animation: pop .5s ease-out; */
     transform: translateY(-10px);
-    
-    box-shadow: 0 15px 10px rgba(0,0,0,.4);
-    
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
+}
+
+.navLink:active {
+    transform: translateY(-1px);
 }
 
 .navbar {
@@ -94,7 +157,6 @@
     background-image: url("../../../TechnologyPhotos/header.jpg");
     border-bottom: 5px solid black;
     background-size: cover;
-   
 }
 
 .techTopPortion {
@@ -110,18 +172,15 @@
     padding: 10px;
     padding-bottom: 30px;
     margin-bottom: 20px;
-   
 }
 
-
-@media(min-width: 756px ){
-    .hamburger{
+@media(min-width: 756px) {
+    .hamburger {
         display: none;
     }
 }
 
-
-.hamburger{
+.hamburger {
     color: black;
     background-color: #d4d4d4;
     width: 15%;
@@ -129,28 +188,24 @@
     margin-top: 10px;
     font-size: 20px;
     border-radius: 20%;
-    
 }
 
-.active{
+.active {
     color: black;
     background-color: white;
 }
 
-
 /* 
 dont think keyframe translate works with bootstrap */
 
-@keyframes pop{
-    0%{
+@keyframes pop {
+    0% {
         transform: translateY(0px);
     }
-
-    50%{
+    50% {
         transform: translateY(-10px);
     }
-
-    100%{
+    100% {
         transform: translateY(-4px);
     }
 }
