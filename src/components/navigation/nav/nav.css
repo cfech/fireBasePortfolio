@@ -1,12 +1,6 @@
-:root {
-    --span-background-color: #3468B8;
-    --link-color: white;
-}
-
 .namebox {
-    background-color: rgb(56, 106, 186);
+    background-color: var(--color-secondary);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: ghostwhite !important;
     font-size: 35px;
     padding: 20px;
     margin: 0px, auto, 0px, auto;
@@ -14,27 +8,9 @@
     text-align: center;
     font-family: 'Roboto Slab', serif;
     border: 3px solid black;
-    /* transition: all .5s; */
-    /* animation: pulse ; */
 }
 
-/* .namebox:hover{
-    transform: skewY(5deg) skewX(15deg) scale(1.1);
-} */
-
-/* @keyframes pulse {
-    0% {
-      background-color: #001F3F;
-    }
-    100% {
-      background-color: #FF4136;
-    } 
-  } */
-
 #name {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
     transition: all .5s;
     animation: nameColor 1.5s ease-in-out ;
     display: inline-block;
@@ -60,7 +36,6 @@
         color: transparent;
     }
     
-
     40% {
         
         color: black;
@@ -84,7 +59,54 @@
     padding-top: 0px;
 }
 
-@media only screen and (max-width: 756px) {
+.link__row {
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.navLink {
+    border: 1px solid black;
+    height: auto;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    opacity: .8;
+    border-radius: 25%;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--navLink-text-color);
+    font-family: 'Roboto Slab', serif;
+    padding: 0px 9px 0px 9px;
+    display: inline-block;
+    transition: all .4s;
+}
+
+.navLink:hover {
+    background-color: var( --navLink-highlight-color);
+    opacity: 1;
+    color: black;
+    transition: background-color 500ms;
+    text-decoration: none;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
+}
+
+.active {
+    color: black;
+    background-color: var(--navLink-active-color);
+}
+
+.navLink:active {
+    transform: translateY(-1px);
+    
+}
+
+
+
+
+@media only screen and (max-width: 755px) {
     .namebox {
         width: 100%;
         margin: 0px;
@@ -102,7 +124,7 @@
         padding: 1px;
         margin: 0px 1px 0px 1px;
     }
-    .linkS {
+    .link__row {
         display: grid;
         height: 20%;
         font-size: 15px;
@@ -116,43 +138,7 @@
     }
 }
 
-.navLink {
-    border: 1px solid black;
-    height: auto;
-    padding: 15px;
-    background-color: var(--span-background-color);
-    opacity: .8;
-    border-radius: 25%;
-    padding: 10px;
-    font-size: 30px;
-    color: var(--link-color);
-    font-family: 'Roboto Slab', serif;
-    padding: 0px 9px 0px 9px;
-    display: inline-block;
-    transition: all .4s;
-}
-
-.navLink:hover {
-    background-color: var(--link-color);
-    opacity: 1;
-    color: black;
-    transition: background-color 500ms;
-    text-decoration: none;
-    /* transform: translateY(-3px); */
-    /* animation: pop .5s ease-out; */
-    transform: translateY(-10px);
-    box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
-}
-
-.navLink:active {
-    transform: translateY(-1px);
-}
-
-.navbar {
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
+/* background pictures */
 .topPortion {
     background-image: url("../../../TechnologyPhotos/header.jpg");
     border-bottom: 5px solid black;
@@ -166,13 +152,7 @@
     background-size: cover;
 }
 
-.linkS {
-    text-align: center;
-    height: auto;
-    padding: 10px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-}
+
 
 @media(min-width: 756px) {
     .hamburger {
@@ -190,10 +170,7 @@
     border-radius: 20%;
 }
 
-.active {
-    color: black;
-    background-color: white;
-}
+
 
 /* 
 dont think keyframe translate works with bootstrap */
@@ -209,28 +186,3 @@ dont think keyframe translate works with bootstrap */
         transform: translateY(-4px);
     }
 }
-
-/* @keyframes moveInLeft {
-  
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    50%{
-        opacity: .5;
-    }
-
-    80% {
-        opacity: .9;
-        transform: translateX(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-} */
-
-/* .test{
-    animation: moveInLeft 2s ease-out;
-} */

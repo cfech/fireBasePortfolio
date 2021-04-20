@@ -6,7 +6,8 @@
 }
 
 .projects {
-    background-color: rgba(56, 106, 186, .7);
+    background-color: var(--color-secondary);
+    opacity: .7;
     padding: 5px 20px 5px 20px;
     margin-top: 40px;
 }

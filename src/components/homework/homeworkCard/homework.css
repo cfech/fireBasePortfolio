@@ -1,11 +1,11 @@
 a {
-    color: white;
+    color: var(--text-color-primary);
     margin: 5px;
 }
 
 a:hover {
     transition: all .5s;
-    color: #FF882E;
+    color: var(--link-hover-color);
 }
 
 #homeworkPic:hover{

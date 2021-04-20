@@ -1,23 +1,118 @@
+:root {
+    --link-hover-color: #FF882E;
+
+    --color-primary: #8AB9FF;
+    
+    --color-secondary: rgb(56, 106, 186);
+    
+
+    --navLink-text-color: white;
+    --navLink-highlight-color: white;
+    --navLink-active-color: white;
+
+    --scroll-bar-thumb-color: #FF882E;
+    --scroll-bar-track-color: black;
+    
+    --text-color-primary: ghostwhite;
+    --text-color-secondary: black;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 .home {
-    background-color: #8AB9FF;
+    background-color: var(--color-primary);
 }
 
 .projectSection {
-    background-color: rgb(56, 106, 186) !important;
+    background-color: var(--color-secondary) ;
     border: solid;
     border-color: black;
     border-width: 3px;
     margin-top: 30px;
+}
+
+.homework__section {
+    background-color: var(--color-secondary) ;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top: 30px;
+    position: relative;
+    transition: all 2s;
+}
+
+.homework__section--row {
+    max-height: 290px;
+    overflow-y: hidden;
+}
+
+@media(max-width: 1200px) {
+    .homework__section--row {
+        max-height: 270px;
+    }
     
 }
 
-.homeworkSection {
-    background-color: rgb(56, 106, 186) !important;
-    border: solid;
-    border-color: black;
-    border-width: 3px;
-    margin-top: 30px;
+@media(max-width: 900px) {
+    .homework__section--row {
+        max-height: 450px;
+    }
+    
+}
+
+@media(max-width: 600px) {
+    .homework__section--row{
+        max-height: 295px;
+    }
+
+    .homework__section--row, .homework__section--row-expanded {
+        margin-bottom: 30px;
+    }
+
+}
+
+.homework__section--row-expanded {
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+#homework__section--expanderLink {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--text-color-primary);
+}
+
+#homework__section--expanderLink::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#homework__section--expanderLink:hover {
+    background-color: var(--color-primary);
+    color: var(--text-color-secondary);
+    box-shadow: 0 1px 2px rgba(black 0.8);
+    transform: translate(-50%, -5%);
+}
+
+#homework__section--expanderLink:active {
+    box-shadow: 0 0.5px 1px rgba(black 0.15);
+    transform: translate(-50%, -3%);
 }
 
 h1 {
@@ -37,20 +132,15 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px black;
-   
-    background-color: black;
+    background-color: var(--scroll-bar-track-color);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #FF882E;
+    background-color: var(--scroll-bar-thumb-color);
     border-radius: 10px;
-    /* outline: 10px solid #FF882E; */
 }
 
-html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+
 
 .header {
     font-family: 'Roboto Slab', serif;

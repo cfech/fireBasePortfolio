@@ -1,5 +1,5 @@
 .Certs {
-    background-color: #8AB9FF;
+    background-color: var(--color-primary);
 }
 
 .certificationsWindow {
@@ -8,7 +8,7 @@
     border: 1px solid black;
     height: auto;
     margin-top: 30px;
-    background-color: rgb(56, 106, 186);
+    background-color: var(--color-secondary);
     padding: 50px 20px 200px 20px;
     box-sizing: border-box;
 }
@@ -46,7 +46,7 @@
 }
 
 .card__parent--heading {
-    color: white;
+    color: var(--text-color-primary);
     height: 10%;
     margin-bottom: 3%;
     line-height: 1;
@@ -73,7 +73,6 @@
     perspective: 1500px;
     -moz-perspective: 1500px;
     transition: all 1s ease;
-    
 }
 
 .card__front {
@@ -86,7 +85,7 @@
     transition: all 1s ease;
     border-radius: 5px;
     border: 2px solid black;
-    box-shadow: 0 20px 30px rgba(0,0,0, .75) ;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .75);
 }
 
 .card__front--1 {
@@ -120,7 +119,7 @@
     transform: rotateY(180deg);
     border-radius: 5px;
     border: 2px solid black;
-    box-shadow: 0 20px 30px rgba(0,0,0, .75) ;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .4);
 }
 
 @media screen and (max-width: 600px) {
@@ -135,35 +134,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 20px double #8AB9FF;
+    border: 20px double var(--color-primary);
     padding: 20px;
     background-color: rgba(white, 1);
-    
 }
 
-.card__back--link:visited,
-.card__back--link:active{
-    color: rgba(113, 111, 111, 0.303);
-    display: inline-block;
-
-    border-bottom: 1px solid black;
-    padding: 3px;
-    transition: all 0.2s;
-    margin-right: 0px !important;
+.card__back--paragraph {
+    color: var(--text-color-secondary);
 }
-
-.card__back--link:hover {
-    background-color: black;
-    color: #8AB9FF;
-   
-    box-shadow: 0 1rem 2rem rgba(black 0.15);
-    transform: translateY(-2px);
-  }
-
-  .card__back--link:active {
-    box-shadow: 0 0.5rem 1rem rgba(black 0.15);
-    transform: translateY(0px);
-  }
 
 @media screen and (max-width: 900px) {
     .card__back-paragraph--wrapper {
@@ -175,8 +153,43 @@
 @media screen and (max-width: 600px) {
     .card__back-paragraph--wrapper {
         font-size: 10px;
+    }
+    .card__back--paragraph {
         color: transparent;
     }
+}
+
+/* accounting for the fact that overflow utilizes transform and breaks backface visibility when you try to apply it to the same element at the same time, here we only apply it when backface visibility is not used , only a problem on smaller screens where we need a scrolling mechanic */
+
+@media screen and (max-width: 600px) {
+    .card--rotate:hover .card__back-paragraph--wrapper {
+        overflow-x: scroll;
+        
+    }
+    .card--rotate:hover .card__back--paragraph {
+        color: var(--text-color-secondary);
+    }
+}
+
+.card__back--link:visited, .card__back--link:active {
+    color: rgba(113, 111, 111, 0.303);
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    transition: all 0.2s;
+    margin-right: 0px !important;
+}
+
+.card__back--link:hover {
+    background-color: black;
+    color: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(black 0.15);
+    transform: translateY(-2px);
+}
+
+.card__back--link:active {
+    box-shadow: 0 0.5rem 1rem rgba(black 0.15);
+    transform: translateY(0px);
 }
 
 .card--rotate:hover .card__front {
@@ -186,16 +199,5 @@
 .card--rotate:hover .card__back {
     transform: rotateY(0deg);
 }
-
-/* accounting for the fact that overflow utilizes transform and breaks backface visibility when you try to apply it to the same element at the same time, here we only apply it when backface visibility is not used , only a problem on smaller screens where we need a scrolling mechanic */
-
-@media screen and (max-width: 600px) {
-
-  .card--rotate:hover .card__back-paragraph--wrapper {
-    overflow-x: scroll;
-    color: black;
-}
-}
-
 
 /* rotating cards */

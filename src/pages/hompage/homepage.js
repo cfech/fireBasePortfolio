@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import AboutMe from "../../components/aboutMe/aboutme"
 import Project from "../../components/projects/projectCard"
 import Homework from "../../components/homework/homeworkCard/homeworkCard"
@@ -12,20 +12,36 @@ import SideDrawer from "../../components/navigation/sideDrawer/sideDrawer"
 
 function Homepage(props) {
 
-const [showSideDrawer, setShowSideDrawer] = useState(false)
+    const [showSideDrawer, setShowSideDrawer] = useState(false)
+    const [showMoreHomeworks, setShowMoreHomeworks] = useState(false)
 
-const openSideDrawerHandler = () => {
-    console.log("clicked")
-    setShowSideDrawer(true)
-}
+    const openSideDrawerHandler = () => {
+        console.log("clicked")
+        setShowSideDrawer(true)
+    }
 
-const closeSideDrawerHandler = () => {
-    setShowSideDrawer(false)
-}
+    const closeSideDrawerHandler = () => {
+        setShowSideDrawer(false)
+    }
+
+    const showMoreHomeworksHandler = () => {
+        console.log("clicked")
+        if(showMoreHomeworks){
+            setShowMoreHomeworks(false)
+        }else{
+            setShowMoreHomeworks(true)
+        }
+    }
+
+    let homeworkShowClass = null;
+
+    showMoreHomeworks?  homeworkShowClass = "row  justify-content-center homework__section--row-expanded" : homeworkShowClass = "row  justify-content-center homework__section--row"
+
+
     return (
         <div className="App home">
-            <Nav openSideDrawer = {openSideDrawerHandler} ></Nav>
-            <SideDrawer show = {showSideDrawer} closeSideDrawer={closeSideDrawerHandler}/>
+            <Nav openSideDrawer={openSideDrawerHandler} ></Nav>
+            <SideDrawer show={showSideDrawer} closeSideDrawer={closeSideDrawerHandler} />
             <main
                 className="container justify-content-center">
 
@@ -55,17 +71,18 @@ const closeSideDrawerHandler = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-center homeworkSection  ">
+                <div className="row  homework__section  ">
                     <div className="col-lg-12 mt-4 col-xs-12">
                         <h1 className="header">INDIVIDUAL PROJECTS</h1>
 
                         <hr></hr>
-                        <div className="row  justify-content-center">
+
+                        <div className={homeworkShowClass}>
 
                             <Homework key={homeworks[9].id} src={require("../../sameSizePhotos/employeeDirectorS.png")} href={homeworks[9].href} name={homeworks[9].name} github={homeworks[9].github} />
                             <Homework key={homeworks[10].id} src={require("../../sameSizePhotos/fitnessTrackerS.png")} href={homeworks[10].href} name={homeworks[10].name} github={homeworks[10].github} />
                             <Homework key={homeworks[13].id} src={require("../../sameSizePhotos/googleBooksS.png")} href={homeworks[13].href} name={homeworks[13].name} github={homeworks[13].github} />
-
+                            <a id="homework__section--expanderLink" onClick={() => { showMoreHomeworksHandler() }}>{showMoreHomeworks ? "See Less" : "See More"}</a>
                             <Homework key={homeworks[4].id} src={require("../../sameSizePhotos/weatherDashboardS.png")} href={homeworks[4].href} name={homeworks[4].name} github={homeworks[4].github} />
                             <Homework key={homeworks[8].id} src={require("../../sameSizePhotos/burgerAppS.png")} href={homeworks[8].href} name={homeworks[8].name} github={homeworks[8].github} />
                             <Homework key={homeworks[5].id} src={require("../../sameSizePhotos/noteTakerS.png")} href={homeworks[5].href} name={homeworks[5].name} github={homeworks[5].github} />
