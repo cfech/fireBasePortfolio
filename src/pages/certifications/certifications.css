@@ -1,65 +1,201 @@
-.Certs{
+.Certs {
     background-color: #8AB9FF;
 }
 
-.certificationsWindow{
-    width: 80%;
+.certificationsWindow {
+    width: 90%;
     margin: auto;
     border: 1px solid black;
     height: auto;
     margin-top: 30px;
-    background-color: rgb(56, 106, 186) ;
-    padding: 20px;
+    background-color: rgb(56, 106, 186);
+    padding: 50px 20px 200px 20px;
     box-sizing: border-box;
 }
-.UPennCertification{
-    margin: auto;
+
+/* rotating cards */
+
+.card__parent {
+    height: 550px;
+    width: 650px;
+    margin: 0px auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.MongoDBCertificate{
-    margin: 20px auto;
+@media screen and (max-width: 900px) {
+    .card__parent {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card__parent {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card__parent {
+        height: 300px;
+    }
+}
+
+.card__parent:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.card__parent--heading {
+    color: white;
+    height: 10%;
+    margin-bottom: 3%;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .card__parent--heading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card__parent--heading {
+        font-size: 15px;
+    }
+}
+
+.card--rotate {
+    height: 85%;
+    width: 100%;
     text-align: center;
-    border-top: 2px solid black;
-    padding: 20px 0px;
+    position: relative;
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    transition: all 1s ease;
+    
 }
 
-.MongoDBCertificate img{
-    max-width: 637px;
+.card__front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 20px 30px rgba(0,0,0, .75) ;
 }
 
-@media screen and (max-width: 992px) {
-    .MongoDBCertificate img{
-        max-width: 500px;
+.card__front--1 {
+    background-image: url("../../assets/webDevCertification2.png");
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.card__front--2 {
+    background-image: url("../../assets/react-course.png");
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.card__front--3 {
+    background-image: url("../../assets/MongoDbCertificate.png");
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.card__back {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 20px 30px rgba(0,0,0, .75) ;
+}
+
+@media screen and (max-width: 600px) {
+    .card__back {
+        backface-visibility: hidden;
     }
-    .UPennCertification img{
-        max-width: 500px;
-    }
+}
+
+.card__back-paragraph--wrapper {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px double #8AB9FF;
+    padding: 20px;
+    background-color: rgba(white, 1);
+    
+}
+
+.card__back--link:visited,
+.card__back--link:active{
+    color: rgba(113, 111, 111, 0.303);
+    display: inline-block;
+
+    border-bottom: 1px solid black;
+    padding: 3px;
+    transition: all 0.2s;
+    margin-right: 0px !important;
+}
+
+.card__back--link:hover {
+    background-color: black;
+    color: #8AB9FF;
+   
+    box-shadow: 0 1rem 2rem rgba(black 0.15);
+    transform: translateY(-2px);
   }
 
-  @media screen and (max-width: 780px) {
-    .MongoDBCertificate img{
-        max-width: 450px;
-    }
-    .UPennCertification img{
-        max-width: 450px;
-    }
+  .card__back--link:active {
+    box-shadow: 0 0.5rem 1rem rgba(black 0.15);
+    transform: translateY(0px);
   }
 
-  @media screen and (max-width: 610px) {
-    .MongoDBCertificate img{
-        max-width: 300px;
+@media screen and (max-width: 900px) {
+    .card__back-paragraph--wrapper {
+        max-height: 90%;
+        font-size: 12px;
     }
-    .UPennCertification img{
-        max-width: 300px;
-    }
-  }
+}
 
-  @media screen and (max-width: 500px) {
-    .MongoDBCertificate img{
-        max-width: 250px;
+@media screen and (max-width: 600px) {
+    .card__back-paragraph--wrapper {
+        font-size: 10px;
+        color: transparent;
     }
-    .UPennCertification img{
-        max-width: 250px;
-    }
-  }
+}
+
+.card--rotate:hover .card__front {
+    transform: rotateY(-180deg);
+}
+
+.card--rotate:hover .card__back {
+    transform: rotateY(0deg);
+}
+
+/* accounting for the fact that overflow utilizes transform and breaks backface visibility when you try to apply it to the same element at the same time, here we only apply it when backface visibility is not used , only a problem on smaller screens where we need a scrolling mechanic */
+
+@media screen and (max-width: 600px) {
+
+  .card--rotate:hover .card__back-paragraph--wrapper {
+    overflow-x: scroll;
+    color: black;
+}
+}
+
+
+/* rotating cards */
