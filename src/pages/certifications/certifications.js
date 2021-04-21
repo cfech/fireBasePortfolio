@@ -42,7 +42,7 @@ class Certifications extends Component {
                             </div>
                         </div>
                     </div>
-
+                    <div className="cert__disclaimer">*Flip for description</div>
                     <div className="card__parent">
                         <h3 className="card__parent--heading">React The Complete Guide</h3>
                         <div className="card--rotate">

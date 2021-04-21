@@ -82,7 +82,7 @@ transform: translateX(-100%);
     margin: 20px;
 }
 
-.active{
+/* .active{
     color: black;
     background-color: var(--navLink-active-color);
-}
+} */

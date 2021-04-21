@@ -2,6 +2,7 @@
     background-color: var(--color-secondary);
     color: var(--text-color-primary);
     border: 8px double black;   
+    margin-top: 75px;
 }
 
 .aboutMe {
