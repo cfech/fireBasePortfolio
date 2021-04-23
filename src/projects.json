@@ -353,5 +353,29 @@
     {
         "id": 19 , 
         "name": "2048"
+    },
+    {
+        "id": 20, 
+        "name": "keycode"
+    }, 
+    {
+        "id": 21 , 
+        "name": "jquery calculator"
+    },
+    {
+        "id": 22, 
+        "href": "https://mynatours-f98b1.web.app/", 
+        "name": "Natours", 
+        "github": "https://github.com/cfech/Advanced_CSS_Sass/tree/main/myNatours",
+        "description": "This project was coded for the Udemy Course: 'Advanced CSS and Sass: Flexbox, Grid, Animations and More!' with Jonas Schmedtmann. This website was designed by him and edited by me. It is a single page application for a fictional nature tour company, the primary purpose it to learn advanced css and sass features such as relative and absolute positioning, responsive design with media queries, css transformations and responsive images. We also wrote our own build process using multiple npm packages in the package.json file. It is hosted on firebase", 
+        "technologies": "CSS, Firebase, Git, Google Fonts,  HTML5, Javascript, Key Frames, Media Queries, Node, Sass"
+    },
+    {
+        "id": 23, 
+        "href": "https://react-burger-builder-5a549.web.app/", 
+        "name": "Burger Builder", 
+        "github": "https://github.com/cfech/React_Redux_Burger_Builder_Application",
+        "description": "This is a course project for 'React - The Complete Guide (incl Hooks, React Router, Redux)' by Maximilian Schwarzmüller on Udemy. The purpose of this project was to learn advanced react features such as state, the component life cycle, hwo to call API's, setting up an authentication system, an introduction to webpack, and much modified this project to have some extra features, including storing user info to use at checkout, allowing user to change their information on the 'my account' page, and adding in password changing capabilites through the firebase auth api. This project is hosted on firebase",
+        "technologies": "CSS-Modules, Firebase auth api ,Firebase database, Firebase hosting, Git, Google Fonts,  HTML5, Javascript, Media Queries, Node, React, Redux, Webpack"
     }
 ]

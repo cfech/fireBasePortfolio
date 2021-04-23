@@ -9,9 +9,12 @@
     transition: all 1s;
     border-radius: 20px;
     background-size: cover;
+    /* max-height: 500px; */
+    transform: scale(.8);
+    object-fit: fill;
     
 }
 
 #projectPic:hover{
-transform: scale(1.05);
+transform: scale(.9);
 }

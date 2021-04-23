@@ -8,7 +8,7 @@ import "./teshnologiesdiv.css"
 function TechnologyDiv() {
     return (
         <div className="row techRow justify-content-center">
-
+           
             <div className="col-lg-2 col-md-4 col-6">
                 <img src={require("../../TechnologyPhotos/react.png")} alt="react.js" className="techImages techImages--spinR" />
             </div>
@@ -31,7 +31,6 @@ function TechnologyDiv() {
 
                 <img src={require("../../TechnologyPhotos/nodejs.png")} alt="node.js" className="techImages techImages--spinL" />
             </div>
-            
             
         </div>
     )

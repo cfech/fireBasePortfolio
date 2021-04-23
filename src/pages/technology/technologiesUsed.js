@@ -10,6 +10,7 @@ import projects from "../../new.json"
 class technologies extends Component {
     constructor(props) {
         super(props)
+        console.log(props)
 
         projects.forEach(p => {
             this[`${p.id}_ref`] = React.createRef()
@@ -80,7 +81,7 @@ class technologies extends Component {
         ))
         console.log(techCards)
         return (
-            <div className="App tech">
+            <div className="App tech__body">
                 <Nav openSideDrawer={openSideDrawerHandler} ></Nav>
                 <SideDrawer show={this.state.showSideDrawer} closeSideDrawer={closeSideDrawerHandler} />
                 <div className="container projects">

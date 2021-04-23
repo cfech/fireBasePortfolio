@@ -3,8 +3,8 @@
 
     --color-primary: #8AB9FF;
     
-    --color-secondary: rgb(56, 106, 186);
-    
+    /* --color-secondary: rgb(56, 106, 186); */
+    --color-secondary: #5283D0;
 
     --navLink-text-color: white;
     --navLink-highlight-color: white;

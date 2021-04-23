@@ -7,7 +7,7 @@ function AboutMe() {
     //Return statement with about me and links section
     return (
         <section className="Search row justify-content-center ">
-            <div className="col-lg-12 card mb-4 col-12 mr-xs-0" id="aboutMeDiv">
+            <div className=" card mb-4 col-12 mr-xs-0" id="aboutMeDiv">
                 <div className="card-body">
                     <img className="picture float-left col-12" src={require('../../sameSizePhotos/mypic.jpg')} alt="Graduation" />
 

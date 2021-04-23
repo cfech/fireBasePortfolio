@@ -3,6 +3,8 @@
     color: var(--text-color-primary);
     border: 8px double black;   
     margin-top: 75px;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+    box-shadow: 0 20px 20px black !important */
 }
 
 .aboutMe {

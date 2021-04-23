@@ -26,16 +26,16 @@ function Homepage(props) {
 
     const showMoreHomeworksHandler = () => {
         console.log("clicked")
-        if(showMoreHomeworks){
+        if (showMoreHomeworks) {
             setShowMoreHomeworks(false)
-        }else{
+        } else {
             setShowMoreHomeworks(true)
         }
     }
 
     let homeworkShowClass = null;
 
-    showMoreHomeworks?  homeworkShowClass = "row  justify-content-center homework__section--row-expanded" : homeworkShowClass = "row  justify-content-center homework__section--row"
+    showMoreHomeworks ? homeworkShowClass = "row  justify-content-center homework__section--row-expanded" : homeworkShowClass = "row  justify-content-center homework__section--row"
 
 
     return (
@@ -45,14 +45,15 @@ function Homepage(props) {
             <main
                 className="container justify-content-center">
 
-                <div className="row">
-                    <div className="col-md-12 mt-4 col-xs-12">
+                <div className="row justify-content-center">
+                    <div className=" mt-4 col-12 ">
                         <AboutMe />
                     </div>
                 </div>
 
-                <TechnologyDiv />
-
+               
+                    <TechnologyDiv />
+                
 
 
                 <div className="row justify-content-center projectSection">
@@ -61,10 +62,11 @@ function Homepage(props) {
                         <hr></hr>
 
                         <div className="row justify-content-center">
-                            <Project key={homeworks[14].id} src={require("../../sameSizePhotos/traveWMS.png")} href={homeworks[14].href} name={homeworks[14].name} github={homeworks[14].github} />
+                            <Project key={homeworks[22].id} src={require("../../sameSizePhotos/natours.png")} href={homeworks[22].href} name={homeworks[22].name} github={homeworks[22].github} />
 
-                            <Project key={homeworks[12].id} src={require("../../sameSizePhotos/carAmplifyS.png")} href={homeworks[12].href} name={homeworks[12].name} github={homeworks[12].github} />
-                            <Project key={homeworks[11].id} src={require("../../sameSizePhotos/whpS.png")} href={homeworks[11].href} name={homeworks[11].name} github={homeworks[11].github} />
+                            <Project key={homeworks[23].id} src={require("../../sameSizePhotos/burgerBuilder.png")} href={homeworks[23].href} name={homeworks[23].name} github={homeworks[23].github} />
+
+                            <Project key={homeworks[11].id} src={require("../../sameSizePhotos/whats_Happening_Philly_2.jpg")} href={homeworks[11].href} name={homeworks[11].name} github={homeworks[11].github} />
 
 
                         </div>
