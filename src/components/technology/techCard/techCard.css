@@ -58,7 +58,9 @@
     width: 100%;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
-    color: white;
+    color: black;
+    background-color: #fefefa;
+    box-shadow: inset 10px -10px 0px rgba(0, 0, 0, .2);;
 }
 
 .techList::-webkit-scrollbar {
