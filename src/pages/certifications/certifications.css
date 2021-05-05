@@ -119,6 +119,13 @@
     background-position: 50% 0;
 }
 
+.card__front--4 {
+    background-image: url("../../assets/introToPowershell5.1.png");
+    
+    background-size: cover;
+    background-position: 50% 0;
+}
+
 .card__back {
     height: 100%;
     width: 100%;

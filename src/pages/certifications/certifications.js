@@ -78,6 +78,26 @@ class Certifications extends Component {
                         </div>
                     </div>
 
+
+                    <div className="card__parent">
+                        <h3 className="card__parent--heading">Introduction To Windows PowerShell 5.1</h3>
+                        <div className="card--rotate">
+                            <div className="card__front card__front--4">
+                            </div>
+                            <div className="card__back card__back--1">
+                                <div className="card__back-paragraph--wrapper">
+                                    <p className="card__back--paragraph">
+                                        In this course I got introduced to windows powershell. I learned the basics of what powershell is, what types of commands it accepts and what cmdlets are. I learned about how powershell is integrated into the windows ecosystem and why it is sometime important ot run powershell as an administrator. This course also touched on windows server, how to create a sever in virtual box, add organization units, and manage active user and computers. This is a good course for to begin with if you are completely new to windows powershell.
+                                        <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/windows-powershell-training/" target="_blank">here</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
 
             </div>
