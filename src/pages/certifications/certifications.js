@@ -3,9 +3,30 @@ import Nav from "../../components/navigation/nav/nav"
 import SideDrawer from "../../components/navigation/sideDrawer/sideDrawer"
 import "./certifications.css"
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 class Certifications extends Component {
     state = {
         showSideDrawer: false
+    }
+
+    componentDidMount() {
+
+        console.log("toast")
+
+        toast.info('Hover certificates to rotate', {
+            position: "top-left",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+
+        
     }
 
     render() {
@@ -26,6 +47,17 @@ class Certifications extends Component {
 
         return (
             <div className="App Certs">
+                <ToastContainer
+                    position="top-right"
+                    autoClose={5000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
                 <Nav openSideDrawer={openSideDrawerHandler} ></Nav>
                 <SideDrawer show={this.state.showSideDrawer} closeSideDrawer={closeSideDrawerHandler} />
                 <div className="certificationsWindow">
@@ -51,7 +83,7 @@ class Certifications extends Component {
                             <div className="card__back card__back--1">
                                 <div className="card__back-paragraph--wrapper">
                                     <p className="card__back--paragraph">
-                                        This course expanded my knowledge of React building upon what I learned at the UPenn boot camp. This is a more complete deep dive into the technology. This course provided me with knowledge about state management and how redux is used to make this task simpler, how react works behind the scenes, css modules and webkit. I also learned about firebase database, hosting and building an authentication system, as well as, substantial experience with React. Please check out the course<a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">here</a>. Feel free to also check out, my version of the course project -> <a href="https://react-burger-builder-5a549.web.app/" target ="_blank" rel="noopener noreferrer" className="card__back--link">The Burger Builder</a>.
+                                        This course expanded my knowledge of React building upon what I learned at the UPenn boot camp. This is a more complete deep dive into the technology. This course provided me with knowledge about state management and how redux is used to make this task simpler, how react works behind the scenes, css modules and webkit. I also learned about firebase database, hosting and building an authentication system, as well as, substantial experience with React. Please check out the course<a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">here</a>. Feel free to also check out, my version of the course project -> <a href="https://react-burger-builder-5a549.web.app/" target="_blank" rel="noopener noreferrer" className="card__back--link">The Burger Builder</a>.
                                     </p>
                                 </div>
                             </div>
@@ -70,7 +102,7 @@ class Certifications extends Component {
                             <div className="card__back card__back--1">
                                 <div className="card__back-paragraph--wrapper">
                                     <p className="card__back--paragraph">
-                                        In this course I built on my knowledge of MongoDB. This course was taught in javascript and mainly used the mongo shell to interact with the database. I reinforced my knowledge of the C.R.U.D operations, learned about indexing and filtering data. Learned how to use MongoDB's aggregation framework to group data together, as well as got exposure to Atlas and the concept of sharding. Please check out the course 
+                                        In this course I built on my knowledge of MongoDB. This course was taught in javascript and mainly used the mongo shell to interact with the database. I reinforced my knowledge of the C.R.U.D operations, learned about indexing and filtering data. Learned how to use MongoDB's aggregation framework to group data together, as well as got exposure to Atlas and the concept of sharding. Please check out the course
                                         <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank">here</a>.
                                     </p>
                                 </div>
@@ -119,7 +151,7 @@ class Certifications extends Component {
                             <div className="card__back card__back--1">
                                 <div className="card__back-paragraph--wrapper">
                                     <p className="card__back--paragraph">
-                                        Description coming soon ... Click 
+                                        Description coming soon ... Click
                                         <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/active-directory-group-policy-2012/" target="_blank">here</a> to learn more.
                                     </p>
                                 </div>
@@ -136,7 +168,7 @@ class Certifications extends Component {
                                 <div className="card__back-paragraph--wrapper">
                                     <p className="card__back--paragraph">
                                         Description coming soon ...
-                                        Click 
+                                        Click
                                         <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/gitlab-ci-pipelines-ci-cd-and-devops-for-beginners/" target="_blank">here</a> to learn more.
                                     </p>
                                 </div>
