@@ -126,6 +126,27 @@
     background-position: 50% 0;
 }
 
+.card__front--5 {
+    background-image: url("../../assets/PowerShellAdvanced.png");
+    
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.card__front--6 {
+    background-image: url("../../assets/ActiveDirectoryGroupPolicyLab.png");
+    
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.card__front--7 {
+    background-image: url("../../assets/gitlabCICD.png");
+    
+    background-size: cover;
+    background-position: 50% 0;
+}
+
 .card__back {
     height: 100%;
     width: 100%;

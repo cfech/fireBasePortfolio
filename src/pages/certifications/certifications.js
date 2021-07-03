@@ -95,7 +95,54 @@ class Certifications extends Component {
                         </div>
                     </div>
 
+                    <div className="card__parent">
+                        <h3 className="card__parent--heading">Powershell Advanced</h3>
+                        <div className="card--rotate">
+                            <div className="card__front card__front--5">
+                            </div>
+                            <div className="card__back card__back--1">
+                                <div className="card__back-paragraph--wrapper">
+                                    <p className="card__back--paragraph">
+                                        Description coming soon ... Click
+                                        <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/powershell-advanced/" target="_blank">here</a> to learn more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="card__parent">
+                        <h3 className="card__parent--heading">Active Directory & Group Policy Lab</h3>
+                        <div className="card--rotate">
+                            <div className="card__front card__front--6">
+                            </div>
+                            <div className="card__back card__back--1">
+                                <div className="card__back-paragraph--wrapper">
+                                    <p className="card__back--paragraph">
+                                        Description coming soon ... Click 
+                                        <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/active-directory-group-policy-2012/" target="_blank">here</a> to learn more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card__parent">
+                        <h3 className="card__parent--heading">GitLab CI: Pipelines, CI/CD and DevOps for Beginners</h3>
+                        <div className="card--rotate">
+                            <div className="card__front card__front--7">
+                            </div>
+                            <div className="card__back card__back--1">
+                                <div className="card__back-paragraph--wrapper">
+                                    <p className="card__back--paragraph">
+                                        Description coming soon ...
+                                        Click 
+                                        <a className="card__back--link" rel="noopener noreferrer" href="https://www.udemy.com/course/gitlab-ci-pipelines-ci-cd-and-devops-for-beginners/" target="_blank">here</a> to learn more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
